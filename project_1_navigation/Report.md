@@ -60,6 +60,10 @@ Environment solved in 421 episodes!	Average Score: 13.00
 <br>
 The plot above shows the score with the average line (Red) per 100 episodes. It should be noted that the `LR` is influences the topology of the plot along with the `Gamma`. Changes in the above numbers for the same DQN can result in better or worse results.
 
+### Saved Weights
+The weights of the model are saved in a file called `saved_weights.pth`. This file was saved from the code by using the torch.save() function. Please use thse weights to reproduce the result. 
+Note - The code will save your weights locally if you run the jupyter notebook. 
+
 ### Ideas for Future Work
 
 1. Modifying replay buffer to make the experience tuples prioritized: the higher the TD error the higher priority
