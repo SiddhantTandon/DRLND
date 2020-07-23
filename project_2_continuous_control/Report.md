@@ -78,7 +78,7 @@ max_norm = 1                # clipping of gradients to prevent gradient explosio
 ### Results
 As shown below agent learned the environment fairly quickly. In ~ 350 episodes it reached average 13+ reward.
 
-[](./images/continuous_control_plot.jpg)
+[](images/continuous_control_plot.jpg)
 <br>
 The weights of the networks are stored in `checkpoint_actor.pth` and `checkpoint_critic.pth` file using `torch.save(agent.local.state_dict(), 'checkpoint.pth')`
 
