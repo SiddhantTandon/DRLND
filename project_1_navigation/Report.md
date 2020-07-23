@@ -16,16 +16,17 @@ Navigation project uses the 'Banana app' made in Unity as its platform for evalu
 
 ### Algorithm
 
-To solve the Banana environment, a Deep Q-Network algorithm is used to learn the environment. Brief summary of the algorithm below:
+To solve the Banana environment, a Deep Q-Network algorithm is used to learn the environment. DQN is a reinforcement learning algorithm that combines Q-Learning with deep neural networks. More on implementation of DQN with Pytorch can be found [here](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html) Brief summary of the algorithm below:
 
 1. Using Markov Decision Process principle, first sample environment and store experience tuples as **(s, a, r, s')**. These tuples are stored in `ReplayBuffer` with some size.
 2. Next, a batch size (small and random) is selected from the experience buffer to train the network.
 3. While training, target weights are fixed to help in learning.
 4. Lastly, update set of weights using gradient descent.
 
+
 ### Overview of DQN
 
-The DQN implemented uses three hidden layers with 600, 300 and 100 nodes (other configurations were used which gave worse results).
+The DQN implemented uses three hidden layers with 600, 300 and 100 nodes (other configurations were tested as well, this configuration gave results summarized in the next sextion).
 Hyperparameters chosen for the implementation are below:
 
 ```
@@ -64,7 +65,7 @@ The plot above shows the score with the average line (Red) per 100 episodes. It 
 The weights of the model are saved in a file called `saved_weights.pth`. This file was saved from the code by using the torch.save() function. Please use thse weights to reproduce the result. 
 Note - The code will save your weights locally if you run the jupyter notebook. 
 
-### Ideas for Future Work
+### Future Work/Improvements 
 
 1. Modifying replay buffer to make the experience tuples prioritized: the higher the TD error the higher priority
 
