@@ -41,7 +41,7 @@ hidden_layers = [500, 200, 100]
 
 ### Results
 
-DQN algorithm was able to reach the environment's reward threshold in 498 episodes.
+DQN algorithm was able to reach the environment's reward threshold in 492 episodes.
 
 ```
 Episode 100	Average Score: 0.07
