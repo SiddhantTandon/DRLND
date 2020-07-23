@@ -43,7 +43,16 @@ hidden_layers = [500, 200, 100]
 
 DQn algorithm was able to reach the environment's reward threshold in 498 episodes.
 
-
+```
+Episode 100	Average Score: 0.07
+Episode 200	Average Score: 1.92
+Episode 300	Average Score: 6.56
+Episode 400	Average Score: 10.69
+Episode 492	Average Score: 13.02
+Environment solved in 392 episodes!	Average Score: 13.02
+```
+[DQN](/images/navigation_plot.jpg)
+The weights of the networks are stored in `saved_weights.pth` file using `torch.save(agent.local.state_dict(), 'saved_weights.pth')`
 
 ### Ideas for Future Work
 
