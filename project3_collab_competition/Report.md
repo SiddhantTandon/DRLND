@@ -76,7 +76,8 @@ Algorithm that was used in this work for solving the enviromnent is described in
 ![DDPG Algorithm](./images/algorithm.jpg)
 
 <br>
-Check the implementation of the `DDPG_Agent()` in [`ddpg_agent.py`](./ddpg_agent#L30)!
+
+Check the implementation of the `DDPG_Agent()` in [`ddpg_agent.py`](./ddpg_agent#L30) !
 
 
 DDPG is using both value function (Critic network) & policy approximation (Actor network) because using only one kind of approximation gives:
