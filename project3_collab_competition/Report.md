@@ -24,7 +24,7 @@ The environment is deemed solved if the agents get an average score of +0.5 over
 
 DDPG is an Actor-Critic method that uses value function and direct policy approximation at the same time.
 There are two internal types of neural networks:
-- Actor network - transforms state to action values. In this environment there are 4 action values.
+- Actor network - transforms state to action values. In this environment there are 4 action values. Check `model.py` line [19](./model.py#L19) for implementation. 
 
   ```
   self.fc1 = nn.Linear(state_size, 128)
@@ -45,7 +45,7 @@ There are two internal types of neural networks:
     x = F.tanh(x)
   ```
 
-- Critic network - transforms state and action values to a quality measure of this state (Q(s, a)).
+- Critic network - transforms state and action values to a quality measure of this state (Q(s, a)). Check `model.py` line [58](./model.py#L58) for implementation. 
 
 
   ```
