@@ -76,7 +76,7 @@ Algorithm that was used in this work for solving the enviromnent is described in
 ![DDPG Algorithm](./images/algorithm.jpg)
 
 
-DDPG is using both value function (Critic network) & policy approximation (Actor network) because using only one kind of approximation we get:
+DDPG is using both value function (Critic network) & policy approximation (Actor network) because using only one kind of approximation gives:
 
 - policy based methods - have high variance
 - value function methods - have high bias
@@ -105,9 +105,16 @@ There are some similarities to the DQN architecture:
 ```
 
 ### Results
+The algorithm was able to solve the environment in 984 episodes, with the average score reaching 0.5. 
+```
+EPISODE: 900	 Average Score: 0.20
+environment is solved in 984 episodes, with average score of 0.52
+```
 
+![](./images/collab_plot.jpg)
+<br>
 
-
+The plot shows the rolling scores for each episode and when it crosses the target line (shown in green). 
 
 ### Future Work
 In this project DDPG algorithm shows that agents are trying to copy each other and thus more robust learning algorithms can be implemented if we use MADDPG, D4PG etc which will circumvent that observation. Some other examples can be using the [Multi Agent Actor Critic for Mixed Cooperative Competitive environments](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf) algorithm. <br>
