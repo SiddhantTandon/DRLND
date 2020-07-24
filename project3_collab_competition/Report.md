@@ -120,6 +120,11 @@ environment is solved in 984 episodes, with average score of 0.52
 
 The plot shows the rolling scores for each episode and when it crosses the target line (shown in green). 
 
+### Saved Weights
+You can find the saved weights for actor and critic saved using `torch.save()` function under the folder [weights](./weights). Below you can see how the agents play using the saved weights !
+
+![](./images/video.gif)
+
 ### Future Work
 In this project DDPG algorithm shows that agents are trying to copy each other and thus more robust learning algorithms can be implemented if we use MADDPG, D4PG etc which will circumvent that observation. Some other examples can be using the [Multi Agent Actor Critic for Mixed Cooperative Competitive environments](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf) algorithm. <br>
 Soccer environment, as mentioned in the [README.md](./README.md), will also be a good platform to test out these algorithms. 
